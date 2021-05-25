@@ -1,0 +1,10 @@
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\bin\Debug\RPS_Winform.exe.config
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\bin\Debug\RPS_Winform.exe
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\bin\Debug\RPS_Winform.pdb
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.csprojAssemblyReference.cache
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.Form1.resources
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.Properties.Resources.resources
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.csproj.GenerateResource.cache
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.csproj.CoreCompileInputs.cache
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.exe
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.pdb
