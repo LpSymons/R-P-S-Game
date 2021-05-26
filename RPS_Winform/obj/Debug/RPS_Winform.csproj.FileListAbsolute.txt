@@ -8,3 +8,4 @@ C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.cspr
 C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.csproj.CoreCompileInputs.cache
 C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.exe
 C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.pdb
+C:\Users\LouSeal\source\repos\RPS_Winform\RPS_Winform\obj\Debug\RPS_Winform.Form2.resources

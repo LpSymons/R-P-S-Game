@@ -32,6 +32,7 @@ namespace RPS_Winform
         //Choices for both players
         string CPUChoice;
         string playerChoice;
+        string playerName;
 
         //Scores for both players
         int playerScore;
@@ -47,6 +48,9 @@ namespace RPS_Winform
             playerChoice = "none";
 
             txtCountDown.Text = "5";
+
+            Form2.userName = playerName; 
+
         }
 
         private void label3_Click(object sender, EventArgs e)
