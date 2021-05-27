@@ -16,12 +16,12 @@ namespace RPS_Winform
         int rounds = 3;
         int timerPerRound = 6;
         bool gameOver = false;
-
+        private string _userName;
         /// <summary>
         /// Array list to stores the choices, this has been stored with 
         /// the fields doubled to improve the random selection.
         /// </summary>
-        string[] CPUchoiceList = {"rock", "paper", "scissor", "paper", "scissor", "rock"};
+        string[] CPUchoiceList = { "rock", "paper", "scissor", "paper", "scissor", "rock" };
 
         //Random number is saved
         int randomNumber = 0;
@@ -32,27 +32,22 @@ namespace RPS_Winform
         //Choices for both players
         string CPUChoice;
         string playerChoice;
-        public static string playerName { get; set; }
+
 
         //Scores for both players
         int playerScore;
         int CPUScore;
-        
-       
-        public Form1()
+
+
+        public Form1(string userName)
         {
             InitializeComponent();
-
+            _userName = userName;
             countDownTimer.Enabled = true;
 
             playerChoice = "none";
-
+            label1.Text = _userName;
             txtCountDown.Text = "5";
-
-  
-
-            
-
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -75,7 +70,7 @@ namespace RPS_Winform
         private void btnScissors_Click(object sender, EventArgs e)
         {
             picPlayer.Image = Properties.Resources.scissors;
-            playerChoice = "scissors";
+            playerChoice = "scissor";
         }
 
         /// <summary>
@@ -89,7 +84,7 @@ namespace RPS_Winform
             playerScore = 0;
             CPUScore = 0;
             rounds = 3;
-            txtScore.Text =  "Player: "+playerName + playerScore + " - " + " CPU: " + CPUScore;
+            txtScore.Text = "Player: " + _userName + " " + playerScore + " - " + " CPU: " + CPUScore;
 
             playerChoice = "None";
 
@@ -113,7 +108,7 @@ namespace RPS_Winform
 
             txtCountDown.Text = timerPerRound.ToString();
 
-          
+
             txtRounds.Text = "Rounds: " + rounds;
 
             if (timerPerRound < 1)
@@ -147,7 +142,7 @@ namespace RPS_Winform
                 }
                 else
                 {
-                    if(playerScore > CPUScore)
+                    if (playerScore > CPUScore)
                     {
                         MessageBox.Show("You Win");
                     }
@@ -160,7 +155,7 @@ namespace RPS_Winform
                 }
             }
 
-             
+
 
         }
 
@@ -204,7 +199,7 @@ namespace RPS_Winform
 
                 rounds -= 1;
 
-                MessageBox.Show("Player Wins, Paper Covers Rock!");
+                MessageBox.Show("Player Wins, Rock Breaks Scissor !");
             }
 
             else if (playerChoice == "paper" && CPUChoice == "rock")
@@ -213,7 +208,7 @@ namespace RPS_Winform
 
                 rounds -= 1;
 
-                MessageBox.Show("Player Wins, Rock Breaks Scissor");
+                MessageBox.Show("Player Wins, Paper Covers Rock!");
             }
 
             else if (playerChoice == "scissor" && CPUChoice == "paper")
@@ -248,7 +243,7 @@ namespace RPS_Winform
                 return;
             }
 
-            txtScore.Text = "Player: " + playerScore + " - " + " CPU: " + CPUScore;
+            txtScore.Text = "Player: " + _userName + " " + playerScore + " - " + " CPU: " + CPUScore;
 
             playerChoice = "None";
 
