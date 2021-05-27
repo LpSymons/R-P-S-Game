@@ -32,7 +32,7 @@ namespace RPS_Winform
         //Choices for both players
         string CPUChoice;
         string playerChoice;
-        string playerName;
+        public static string playerName { get; set; }
 
         //Scores for both players
         int playerScore;
@@ -49,7 +49,9 @@ namespace RPS_Winform
 
             txtCountDown.Text = "5";
 
-            Form2.userName = playerName; 
+  
+
+            
 
         }
 
@@ -87,7 +89,7 @@ namespace RPS_Winform
             playerScore = 0;
             CPUScore = 0;
             rounds = 3;
-            txtScore.Text = "Player: " + playerScore + " - " + " CPU: " + CPUScore;
+            txtScore.Text =  "Player: "+playerName + playerScore + " - " + " CPU: " + CPUScore;
 
             playerChoice = "None";
 
